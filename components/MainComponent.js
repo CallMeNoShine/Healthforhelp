@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { Ionicons } from '@expo/vector-icons'; //Icon directory Links: https://icons.expo.fyi/
+import { Ionicons } from '@expo/vector-icons'; //Icon directory Links: https://ionic.io/ionicons
 
 
 //Screens
@@ -22,7 +22,7 @@ export default function MainContainer(){
     return(
         <NavigationContainer>
             <Tab.Navigator
-            initialRouteName={homeName}
+            initialRouteName={infoName}
             screenOptions={({route})=> ({
                 tabBarIcon: ({focused, color, size}) => {
                     let iconName;
